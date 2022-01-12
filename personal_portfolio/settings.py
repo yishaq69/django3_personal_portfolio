@@ -25,7 +25,7 @@ SECRET_KEY = '7fea)agzt#$+opj(@%htikxso#%(b-6os8n56a9uw*o9&yjm75'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-#ALLOWED_HOSTS = ['www.nickwalter.info']
+ALLOWED_HOSTS = [ ]
 
 
 # Application definition
@@ -126,7 +126,9 @@ STATIC_ROOT = os.path.join(BASE_DIR, 'static')
 MEDIA_URL = '/media/'
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
-"""try:
+try:
     from .local_settings import *
 except ImportError:
-    print("Looks like no local file. You must be on production")"""
+    print("Looks like no local file. You must be on production")
+
+#(myvirtualenv) python3.9 at pythonanywhere
